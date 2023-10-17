@@ -1,6 +1,6 @@
 {
   "name": "portalnet",
-  "version": "0.2.1",
+  "version": "0.1.0",
   "description": "♥ P2P networking library | High-level API | Cross-platform ♥",
   "main": "src/index.js",
   "bin": {
