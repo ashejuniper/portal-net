@@ -4,7 +4,7 @@
   "description": "♥ P2P networking library | High-level API | Cross-platform ♥",
   "main": "src/index.js",
   "bin": {
-    "portalnet": "./bin/portalnet.js"
+    "portal-net": "./bin/portal-net.js"
   },
   "directories": {
     "test": "tests"
