@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/scar-zebra/mycel.git"
+    "url": "git+https://github.com/feedaca7/portal-net.git"
   },
   "keywords": [
     "p2p",
@@ -23,12 +23,12 @@
     "networking",
     "api"
   ],
-  "author": "Ashelynne Juniper <support@scarzebra.com>",
+  "author": "Ashe Lynne Juniper <support@feedaca7.dev>",
   "license": "MPL-2.0",
   "bugs": {
-    "url": "https://github.com/scar-zebra/mycel/issues"
+    "url": "https://github.com/feedaca7/portal-net/issues"
   },
-  "homepage": "https://github.com/scar-zebra/mycel#readme",
+  "homepage": "https://github.com/feedaca7/portal-net#readme",
   "dependencies": {
     "@hyper-cmd/lib-keys": "https://github.com/holepunchto/hyper-cmd-lib-keys#v0.0.2",
     "@hyper-cmd/lib-net": "https://github.com/holepunchto/hyper-cmd-lib-net#v0.0.8",
@@ -36,12 +36,15 @@
     "hyperdht": "^6.6.1",
     "minimist": "^1.2.8",
     "nullstream": "^2.0.1",
-    "portalnet": "^0.1.3",
     "random-port-promise": "^1.0.1",
     "sodium-universal": "^4.0.0"
   },
   "devDependencies": {
+    "bun-types": "latest",
     "jest": "^29.6.1",
     "pkg": "^5.8.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
   }
 }

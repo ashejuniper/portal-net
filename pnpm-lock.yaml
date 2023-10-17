@@ -23,9 +23,6 @@ dependencies:
   nullstream:
     specifier: ^2.0.1
     version: 2.0.1
-  portalnet:
-    specifier: ^0.1.3
-    version: 0.1.3
   random-port-promise:
     specifier: ^1.0.1
     version: 1.0.1
@@ -34,6 +31,9 @@ dependencies:
     version: 4.0.0
 
 devDependencies:
+  bun-types:
+    specifier: latest
+    version: 1.0.6
   jest:
     specifier: ^29.6.1
     version: 29.6.1
@@ -1011,6 +1011,10 @@ packages:
     dependencies:
       base64-js: 1.5.1
       ieee754: 1.2.1
+    dev: true
+
+  /bun-types@1.0.6:
+    resolution: {integrity: sha512-5QwynfXiRCRxPW3ZnC0Dv+sHHmctP4SHIuzsRKOWYO0HF/qUpsxQVexoviaxpmwDsF1hoVDDFdc4xUuafOzx1g==}
     dev: true
 
   /callsites@3.1.0:
@@ -2453,20 +2457,6 @@ packages:
       - encoding
       - supports-color
     dev: true
-
-  /portalnet@0.1.3:
-    resolution: {integrity: sha512-hNfOOHkStkrVkPLM7u6YOvniI0yGUJ6au4J5kMCGfSFU+H3eVvmnoOlX3V3l/rOl1hh7dyRdShDYshHo4R3n4Q==}
-    hasBin: true
-    dependencies:
-      '@hyper-cmd/lib-keys': github.com/holepunchto/hyper-cmd-lib-keys/9587b60639954adeaf4200db5c8a673bf4f023c1
-      '@hyper-cmd/lib-net': github.com/holepunchto/hyper-cmd-lib-net/709aa5b5bcd18ecd2a4f6b4034de78a5ec5ccdf5
-      '@hyper-cmd/lib-utils': github.com/holepunchto/hyper-cmd-lib-utils/54988d47c371e03b1d6178765225c7f610e588c1
-      hyperdht: 6.6.1
-      minimist: 1.2.8
-      nullstream: 2.0.1
-      random-port-promise: 1.0.1
-      sodium-universal: 4.0.0
-    dev: false
 
   /prebuild-install@7.1.1:
     resolution: {integrity: sha512-jAXscXWMcCK8GgCoHOfIr0ODh5ai8mj63L2nWrjuAgXE6tDyYGnx4/8o/rCgU+B4JSyZBKbeZqzhtwtC3ovxjw==}
