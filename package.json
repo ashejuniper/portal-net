@@ -10,7 +10,7 @@
     "test": "tests"
   },
   "scripts": {
-    "build": "pkg .",
+    "build": "pkg . --out-path dist/",
     "test": "jest"
   },
   "repository": {
@@ -46,5 +46,15 @@
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
+  },
+  "pkg": {
+    "scripts": "*.js",
+    "assets": "assets/**/*",
+    "targets": [
+      "node18-linux-x64",
+      "node18-macos-x64",
+      "node18-win-x64"
+    ],
+    "outPath": "dist/"
   }
 }
