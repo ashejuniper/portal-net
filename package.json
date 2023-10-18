@@ -1,6 +1,6 @@
 {
   "name": "portal-net",
-  "version": "0.1.0",
+  "version": "0.1.1-alpha.1",
   "description": "♥ P2P networking library | High-level API | Cross-platform ♥",
   "main": "src/index.js",
   "bin": {
@@ -10,7 +10,8 @@
     "test": "tests"
   },
   "scripts": {
-    "build": "pkg . --out-path dist/",
+    "build": "pkg . --out-path dist/ && ./scripts/dist/rename.sh $npm_package_name $npm_package_version",
+    "prepublish": "scripts/dist/zip.sh $npm_package_name $npm_package_version",
     "test": "jest"
   },
   "repository": {
@@ -24,7 +25,7 @@
     "api"
   ],
   "author": "Ashe Lynne Juniper <support@feedaca7.dev>",
-  "license": "MPL-2.0",
+  "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/feedaca7/portal-net/issues"
   },
