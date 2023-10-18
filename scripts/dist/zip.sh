@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 rm -rf dist/release/
+mkdir dist/release/
 
 # Zip executables for distribution.
 zip -9 dist/release/$1-$2-linux-x64.zip dist/bin/$1-$2-linux-x64

@@ -1,6 +1,6 @@
 {
   "name": "portal-net",
-  "version": "0.1.1-alpha.2",
+  "version": "0.1.1-alpha.3",
   "description": "♥ P2P networking library | High-level API | Cross-platform ♥",
   "main": "src/index.js",
   "bin": {
@@ -11,7 +11,7 @@
   },
   "scripts": {
     "build": "rm -rf dist/ && pkg . --out-path dist/bin/ && ./scripts/dist/rename.sh $npm_package_name $npm_package_version",
-    "prepublishOnly": "{ pnpm build || npm build } && scripts/dist/zip.sh $npm_package_name $npm_package_version",
+    "prepublishOnly": "./scripts/prepublishOnly.sh $npm_package_name $npm_package_version",
     "test": "jest"
   },
   "repository": {
